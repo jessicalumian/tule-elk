@@ -1,0 +1,12 @@
+# module load GNU/4.9 # khmer will load, velvet will not
+module load GNU/4.4.5 # velvet will load, khmer will not
+module unload Python/2.7.2
+module load FastQC/0.11.3
+module load Java/1.8.0_31
+module load Trimmomatic/0.30
+module load velvet/1.2.08
+# module load Python3/3.3.2
+module load zlib/1.2.8
+module load bwa/0.7.7.r441
+module load SAMTools/1.2
+# module load khmer/2.0
