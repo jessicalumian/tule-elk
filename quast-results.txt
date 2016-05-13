@@ -1,0 +1,6 @@
+RESULTS:
+  Text versions of total report are saved to /mnt/research/ged/jessica/elk/quast/quast/quast_results/results_2016_05_13_18_56_29/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /mnt/research/ged/jessica/elk/quast/quast/quast_results/results_2016_05_13_18_56_29/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /mnt/research/ged/jessica/elk/quast/quast/quast_results/results_2016_05_13_18_56_29/report.html
+  Icarus (contig browser) is saved to /mnt/research/ged/jessica/elk/quast/quast/quast_results/results_2016_05_13_18_56_29/icarus.html
+  Log saved to /mnt/research/ged/jessica/elk/quast/quast/quast_results/results_2016_05_13_18_56_29/quast.log
