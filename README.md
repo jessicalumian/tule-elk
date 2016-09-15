@@ -24,3 +24,7 @@ SNP calling steps:
 1. Using assembly file, mapping using bwa and Samtools - [mapping.sh](https://github.com/jessicamizzi/tule-elk/blob/master/mapping.sh)
 2. **Optional** - generate mapping stats - [mapping-stats.sh](https://github.com/jessicamizzi/tule-elk/blob/master/mapping-stats.sh)
 3. SNP calling using freebayes - [freeb-vcf-snps-calling.sh](https://github.com/jessicamizzi/tule-elk/blob/master/freeb-vcf-snps-calling.sh) *Note* - this script is from the awesome Zach Lounsberry, on Twitter as [@indoorecology](https://twitter.com/indoorecology) and blogging at [http://www.ztlecology.info/](http://www.ztlecology.info/)
+
+Because this was my first time mapping, I made a diagram for my own reference that might be helpful to others in a similar position:
+
+![alt text](tule-elk/images/mapping-diagram.png)
