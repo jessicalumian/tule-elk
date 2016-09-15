@@ -27,4 +27,4 @@ SNP calling steps:
 
 Because this was my first time mapping, I made a diagram for my own reference that might be helpful to others in a similar position:
 
-![alt text](tule-elk/images/mapping-diagram.png)
+![alt text](https://github.com/jessicamizzi/tule-elk/blob/master/images/mapping-diagram.png)
