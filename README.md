@@ -28,3 +28,18 @@ SNP calling steps:
 Because this was my first time mapping, I made a diagram for my own reference that might be helpful to others in a similar position:
 
 ![alt text](https://github.com/jessicamizzi/tule-elk/blob/master/images/mapping-diagram.png)
+
+
+## Hey, why study Tule Elk anyway?
+I'm glad you asked! Here are some great reasons to study Tule Elk:
+
+![alt text](https://github.com/jessicamizzi/tule-elk/blob/master/images/elk-pic-1.png)
+
+![alt text](https://github.com/jessicamizzi/tule-elk/blob/master/images/elk-pic-2.png)
+
+![alt text](https://github.com/jessicamizzi/tule-elk/blob/master/images/elk-pic-3.png)
+
+### In all seriousness
+The tule elk (Cervus elaphus nannodes) is a California-endemic subspecies that underwent a major genetic bottleneck when its numbers were reduced to as few as 3 individuals in the 1870s (McCullough 1969; Meredith et al. 2007). Since then, the population has grown to an estimated 4,300 individuals which currently occur in 22 distinct herds (Hobbs 2014). Despite their higher numbers today, the historical loss of genetic diversity combined with the increasing fragmentation of remaining habitat pose a significant threat to the health and management of contemporary populations. As populations become increasingly fragmented by highways, reservoirs, and other forms of human development, risks intensify for genetic impacts associated with inbreeding. By some estimates, up to 44% of remaining genetic variation could be lost in small isolated herds in just a few generations (Williams et al. 2004). For this reason, the Draft Elk Conservation and Management Plan and California Wildlife Action Plan prioritize research aimed at facilitating habitat connectivity, as well as stemming genetic diversity loss and habitat fragmentation (Hobbs 2014; CDFW 2015).
+
+You can read more about this [on Titus' blog](http://ivory.idyll.org/blog/2016-tule-elk-draft.html) until we get the paper written.
