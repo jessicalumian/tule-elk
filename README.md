@@ -5,10 +5,15 @@ This repo contains scripts used for de novo tule elk genome assembly and SNP cal
 Software versions (also listed in [hpcc.modules](https://github.com/jessicamizzi/tule-elk/blob/master/hpcc.modules) file):
 
 FastQC v0.11.3
+
 Trimmomatic v0.30
+
 khmer v2.0
+
 bwa v0.7.7.r441
+
 SAMTools v1.2
+
 MEGAHIT v1.0.5 (installed by cloning the [github repo](https://github.com/voutcn/megahit))
 
 Assembly steps:
