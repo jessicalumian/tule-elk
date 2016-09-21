@@ -1,0 +1,26 @@
+# get rid of header
+
+tail -n +21 YOURFILENAME.txt > headless_working.txt
+
+# determine how many lines of sequence, in this example, 501, but determine this before making new file
+
+head -501 headless_working.txt > headless_tailless_working.txt
+
+# extract just first column. this gives error but file will exist
+
+cat unix |sed 's/\|/ /'|awk '{print $1}' headless_tailless_working.txt > just_fastq_IDs.txt
+
+# use BBMap to extract reads from genome
+
+filterbyname.sh in=final.contigs.fa out=filtered.fq names=just_fastq_IDs.txt include=t
+
+# note - must be in BBMap directory, and change file names accordingly
+
+# remove question mark from BBMap output
+
+sed 's/?*$//' file > newfile
+
+# remove blank lines
+
+sed '/^$/d' foo > foo.tmp
+mv foo.tmp foo
