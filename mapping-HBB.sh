@@ -2,6 +2,7 @@
 #PBS -l walltime=4:00:00
 #PBS -l mem=200gb
 #PBS -m abe
+#PBS -l nodes=3:ppn=2
 #PBS -N KEEP-MAPPED-OVIRG
 #PBS -A ged
 
