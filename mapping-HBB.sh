@@ -22,7 +22,7 @@ bwa mem ovirg_masked_hbb.fna ../work/all-interleaved-elk-reads.pe.qc.fq.gz > tel
 samtools faidx ovirg_masked_hbb.fna
 
 # convert sam to bam
-samtools import ovirg_masked_hbb.fa.fai telk_to_ovirg.sam telk_to_ovirg.bam
+samtools import ovirg_masked_hbb.fna.fai telk_to_ovirg.sam telk_to_ovirg.bam
 
 # sort the bam file
 samtools sort telk_to_ovirg.bam telk_to_ovirg.sorted
