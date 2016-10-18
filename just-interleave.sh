@@ -8,10 +8,14 @@
 cd ${PBS_O_WORKDIR}
 
 source hpcc.modules
+module use /opt/software/ged-software/modulefiles/
+module load anaconda
+source activate elk
+module swap GNU GNU/4.9
 
 ## INTERLEAVING READS
 
-for filename in ../*_R1_*.fastq.gz
+for filename in /mnt/research/ged/jessica/elk/*_R1_*.fastq.gz
 do
      # first, make the base by removing .fastq.gz
      base=$(basename $filename .fastq.gz)
@@ -24,10 +28,9 @@ do
      # construct the output filename
      output=${base/_R1_/}.fastq.gz
 
-     (interleave-reads.py ../${base}.fastq.gz ../${baseR2}.fastq.gz --gzip)
+     (interleave-reads.py /mnt/research/ged/jessica/elk/${base}.fastq.gz /mnt/research/ged/jessica/elk/${baseR2}.fastq.gz --gzip)
 
 done
-
 
 cat ${PBS_NODEFILE}
 env | grep PBS
