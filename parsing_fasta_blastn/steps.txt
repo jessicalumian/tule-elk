@@ -1,3 +1,12 @@
+# make database from original reads
+# ncbi blast command line must be installed and added to path
+
+makeblastdb -in your_database_file.fsa -dbtype nucl -parse_seqids
+
+# run alignment
+
+blastn -db your_database_file.fsa -query your_query_file.fsa -out your_results_outfile_name.out
+
 # get rid of header
 
 tail -n +21 YOURFILENAME.txt > headless_working.txt
