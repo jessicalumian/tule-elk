@@ -12,9 +12,9 @@ source hpcc.modules
 for i in ../*.fastq.gz
 do
 
-  echo "$i" >> elk-read-counting.txt
-  echo "number of lines:" >> elk-read-counting.txt
-  wc -l ${i} >> elk-read-counting.txt
+  echo "$i" >> elk-read-counting-correct.txt
+  echo "number of lines:" >> elk-read-counting-correct.txt
+  zcat ${i} | wc -l >> elk-read-counting-correct.txt
 
 done
 
