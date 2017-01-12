@@ -50,8 +50,14 @@ grep -c "0/1" 1339-nodup-min2.vcf >> 1339-het-counts.txt
 
 # find all sites above coverage threshold (set to 10 in snp command) and print to file
 
+# count all sites 10+ and put in intermediate file
+awk '$3 > 9' 1339-nodup.depth.txt >> 1339-thresh-intermediate-het-counts.txt
+
+# count lines, each corresponding to site over cov 10 and print in stat file
 echo het-sites-above-10 >> 1339-het-counts.txt
-awk '$3 > 9' 1339-nodup.depth.txt >> 1339-het-counts.txt
+wc -l 1339-thresh-intermediate-het-counts.txt >> 1339-het-counts.txt
+
+# divide 0/1 het calls by all 10+ cov sites from vcf for heterozygosity
 
 cat ${PBS_NODEFILE}
 env | grep PBS
