@@ -42,6 +42,17 @@ source hpcc.modules
 
 freebayes -f /mnt/research/ged/jessica/elk/working-scripts/final.contigs.fa --ploidy 2 --min-coverage 10 --no-mnps --no-complex --min-alternate-count 2 1339-nodup.bam | vcffilter -f "QUAL > 20" > 1339-nodup-min2.vcf
 
+## FINDING HETEROZYGOUS SITES ##
+
+# find 0/1 het calls in new vcf and print to file
+echo 1339-nodup-min2.vcf >> 1339-het-counts.txt
+grep -c "0/1" 1339-nodup-min2.vcf >> 1339-het-counts.txt
+
+# find all sites above coverage threshold (set to 10 in snp command) and print to file
+
+echo het-sites-above-10 >> 1339-het-counts.txt
+awk '$3 > 9' 1339-nodup.depth.txt >> 1339-het-counts.txt
+
 cat ${PBS_NODEFILE}
 env | grep PBS
 qstat -f ${PBS_JOBID}
