@@ -23,8 +23,6 @@ SNP calling and determining heterozygous sites:
 
 1. Using assembly file, mapping using bwa and Samtools and call polymorphic sites using freebayes - Example for one elk: [1339-mapping-snp-calling.sh](https://github.com/jessicamizzi/tule-elk/blob/master/1339-mapping-snp-calling.sh)
 2. **Optional** - generate mapping stats - [mapping-stats.sh](https://github.com/jessicamizzi/tule-elk/blob/master/mapping-stats.sh)
-3. Count heterozygous sites in each elk - [find-het-sites.sh](https://github.com/jessicamizzi/tule-elk/blob/master/find-het-sites.sh)
-4. Find sequenced sites with coverage greater than threshold from the vcf files from each elk - [total-vcf-sites.sh](https://github.com/jessicamizzi/tule-elk/blob/master/total-vcf-sites.sh)
 
 Because this was my first time mapping, I made a diagram for my own reference that might be helpful to others in a similar position:
 
