@@ -19,11 +19,12 @@ Assembly steps:
 4. Assembly using MEGAHIT - [megahit-asm.sh](https://github.com/jessicamizzi/tule-elk/blob/master/megahit-asm.sh) (I was initially using velvet but found it too slow, but the scripts are still up)
 5. Assembly evaluation using QUAST - [quast.sh](https://github.com/jessicamizzi/tule-elk/blob/master/quast.sh) (Results are available for viewing [here](https://docs.google.com/spreadsheets/d/1nhKOLVWc_VQt31xmik9_qEKK1S5U6biXARm7qJ-OCOQ/edit?usp=sharing))
 
-SNP calling steps:
+SNP calling and determining heterozygous sites:
 
-1. Using assembly file, mapping using bwa and Samtools - [mapping.sh](https://github.com/jessicamizzi/tule-elk/blob/master/mapping.sh)
+1. Using assembly file, mapping using bwa and Samtools and call polymorphic sites using freebayes - Example for one elk: [1339-mapping-snp-calling.sh](https://github.com/jessicamizzi/tule-elk/blob/master/1339-mapping-snp-calling.sh)
 2. **Optional** - generate mapping stats - [mapping-stats.sh](https://github.com/jessicamizzi/tule-elk/blob/master/mapping-stats.sh)
-3. SNP calling using freebayes - [freeb-vcf-snps-calling.sh](https://github.com/jessicamizzi/tule-elk/blob/master/freeb-vcf-snps-calling.sh) *Note* - this script is from the awesome Zach Lounsberry, on Twitter as [@indoorecology](https://twitter.com/indoorecology) and blogging at [http://www.ztlecology.info/](http://www.ztlecology.info/)
+3. Count heterozygous sites in each elk - [find-het-sites.sh](https://github.com/jessicamizzi/tule-elk/blob/master/find-het-sites.sh)
+4. Find sequenced sites with coverage greater than threshold from the vcf files from each elk - must write script, divide heterozygous sites by total sites.
 
 Because this was my first time mapping, I made a diagram for my own reference that might be helpful to others in a similar position:
 
