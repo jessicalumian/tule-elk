@@ -36,6 +36,10 @@ source hpcc.modules
 #index the sorted bam file
 #samtools index 1339-nodup.bam
 
+## other commands
+# possibly necessary ##subset bam file based on coverage of 10 or more
+#samtools depth 1339-nodup.bam | awk '($3>9) {print}' | wc -l > 1339-nodup-cov10.bam
+
 ## end new section
 
 ## SNP CALLING ##
