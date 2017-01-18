@@ -46,6 +46,9 @@ source hpcc.modules
 
 freebayes -f /mnt/research/ged/jessica/elk/working-scripts/final.contigs.fa --ploidy 2 --min-coverage 10 --no-mnps --no-complex --min-alternate-count 2 1339-nodup.bam | vcffilter -f "QUAL > 20" > 1339-nodup-min2.vcf
 
+# filter for coverage of 10 or greater because freebayes will call DP<10
+vcffilter -f "DP > 9” 1339-nodup-min2.vcf > 1339-nodup-min2-cov10-filtered.vcf
+
 ## FINDING HETEROZYGOUS SITES ##
 
 # find 0/1 het calls in new vcf and print to file
