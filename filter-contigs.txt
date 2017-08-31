@@ -1,0 +1,5 @@
+# Filter contigs less than 200 bp using this awk one liner
+
+awk 'BEGIN {RS = ">" ; ORS = ""} length($2) >= 200 {print ">"$0}' telk.contigs.fa > telk.contigs-l200.fa
+
+# from https://www.biostars.org/p/79202/
